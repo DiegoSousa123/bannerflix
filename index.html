@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <title>BannerFlix</title>
+    </head>
+    <body>
+        <header>
+            <div id="h_div_1">
+                <h2 id="logo">BannerFlix</h2>
+                <small id="sub_title">O lugar perfeito para...banners.</small>
+            </div>
+            <div style="margin-right: 2%">
+                <label for="nome_filme">Filme:</label>
+                <input type="text" id="nome_filme" />
+                <label style="margin-left: 10px" for="url_filme">Imagem:</label>
+                <input type="url" id="url_filme" />
+                <button type="button" id="add" onclick="insert()">
+                    Adicionar
+                </button>
+            </div>
+        </header>
+
+        <div id="div_remove_container">
+            <div id="div_remove">
+                <em style="margin-top: -10px"
+                    ><strong>Qual filme deseja <ins>remover</ins>?</strong></em
+                >
+                <select id="select_opt">
+                    <optgroup
+                        id="options_to_remove"
+                        label="Lista de filmes"
+                    ></optgroup>
+                </select>
+                <button id="delete" onclick="deletar()">remover</button>
+            </div>
+        </div>
+
+        <span onclick="remove()" class="material-symbols-outlined">
+            delete
+        </span>
+
+        <section id="main">
+            <div id="banner_container"></div>
+            <!--<div id="title_container">
+												</div> -->
+        </section>
+
+        <footer>
+            <p>
+                ©Diêgo Sousa<br />Desenvolvido durante a #ImersaoDev7<br />
+                <subscript
+                    >Criado a partir de um smartphone, perdoem qualquer problema
+                    de adaptação do layout</subscript
+                >
+            </p>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>
