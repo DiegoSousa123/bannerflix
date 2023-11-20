@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo+Play:wght@700&display=swap");
 
 html {
-    background-image: url("/bannerflix_back.jpg");
+    background-image: url("bannerflix_back.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
