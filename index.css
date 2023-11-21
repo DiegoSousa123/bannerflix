@@ -254,8 +254,7 @@ span:hover {
     outline-color: red;
 }
 
-footer{
-	width:100%;
+footer{	
 	margin-top: auto;
 	display: flex;
 	justify-content: center;
