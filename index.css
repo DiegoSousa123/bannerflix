@@ -184,7 +184,7 @@ span {
     margin: 50px;
     user-select: none;
     transform: scale(2, 2);
-    transition: box-shadow 0.3s;
+    transition: color 0.3s, box-shadow 0.3s;
     z-index: 5;
 }
 span:active {
