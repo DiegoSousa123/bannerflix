@@ -75,7 +75,7 @@ label {
 }
 
 /*  BEGIN BUTTON CSS */
-#add {
+#add, #delete {
     color: black;
     background: #f9f9f9;
     user-select: none;
@@ -84,35 +84,22 @@ label {
         border-radius 0.3s,
         color 0.3s;
     cursor: pointer;
+    border-radius: 2px;
 }
-#delete {
-    transition:
-        background 0.3s,
-        border-radius 0.3s,
-        color 0.3s;
-    color: black;
-    background: #f9f9f9;
-    user-select: none;
-    text-align: center;
-    border-style: none;
-    outline-color: lightblue;
-}
-#add:hover {
+#add:hover, #delete:hover {
     color: #f9f9f9;
     background: #0fe160;
     border-radius: 10px;
 }
-#delete:hover {
-    color: #f9f9f9;
+#delete:hover{
     background: red;
-    border-radius: 10px;
 }
 
 /*END BUTTONS CSS*/
 
 #nome_filme,
 #url_filme,
-#add {
+#add, #delete{
     font-size: 2em;
     text-align: center;
     border-style: none;
@@ -132,7 +119,8 @@ label {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    -webkit-justify-content: center;
     border-radius: 2px;
     transition: all 0.3s;
 }
@@ -186,6 +174,7 @@ small {
 }
 
 span {
+    color: black;
     cursor: auto;
     border-radius: 100%;
     padding: 10px;
@@ -199,6 +188,7 @@ span {
     z-index: 5;
 }
 span:active {
+    color: #f9f9f9;
     background: rgb(204, 33, 33);
 }
 @keyframes rodar {
@@ -217,7 +207,7 @@ span:hover {
 #div_remove_container {
     height: 400px;
     width: 500px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -249,7 +239,7 @@ span:hover {
 #select_opt, #delete, #div_remove strong{
 	font-size: 2em;
 }
-#select_opt:focused {
+#select_opt:focus {
     outline: solid;
     outline-color: red;
 }
