@@ -128,9 +128,9 @@ function execute() {
             objBanner.innerHTML +=
                 "<div itemscope itemtype='https://schema.org/Movie' id='item'><img itemprop='image' id='image' src=" +
                 element +
-                "><br><small><span itemprop='name'>" +
+                "><br><small itemprop='name'>" +
                 filmsNames[i] +
-                "</span></small></div>";
+                "</small></div>";
         });
     } else {
         objBanner.innerHTML = "";
