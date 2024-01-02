@@ -126,11 +126,11 @@ function execute() {
         objBanner.innerHTML = "";
         userFilms.forEach(function (element, i) {
             objBanner.innerHTML +=
-                "<div id='item'><img id='image' src=" +
+                "<div itemscope itemtype='https://schema.org/Movie' id='item'><img itemprop='image' id='image' src=" +
                 element +
-                "><br><small>" +
+                "><br><small><span itemprop='name'>" +
                 filmsNames[i] +
-                "</small></div>";
+                "</span></small></div>";
         });
     } else {
         objBanner.innerHTML = "";
